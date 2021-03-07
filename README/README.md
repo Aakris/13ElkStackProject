@@ -34,10 +34,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| WEB1     | Server   |            | Linux            |
-| WEB2     | Server   |            | Linux            |
-| WEB3     | Server   |            | Linux            |
-
+| WEB1     | Server   | 10.0.0.5   | Linux            |
+| WEB2     | Server   | 10.0.0.6   | Linux            |
+| WEB3     | Server   | 10.0.0.7   | Linux            |
+| ELK      | Server   | 10.1.0.4   | Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
