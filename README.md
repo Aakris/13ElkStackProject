@@ -27,7 +27,7 @@ Load balancing ensures that the application will be highly available, in additio
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat is used to monitor and collect whatever data you want and send it to either Elasticsearch or Logstash, whichever you prefer. 
-- _TODO: What does Metricbeat record?_
+- Metricbeat takes metrics and statistics from the operating system of the services on the server. Then just like FIlebeat you can send it to Elasticsearch or Logstash
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -43,19 +43,18 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- Put the main ip you would use to access this
+Machines within the network can only be accessed by the Jumpbox Container.
+- I allowed my Jumpbox to access this and manage the playbooks
+Jumpbox 10.0.0.1
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 10.0.0.1             |
+| Web1,2,3 | Yes                 | 10.0.0.5/6/7         |
 
 ### Elk Configuration
 
