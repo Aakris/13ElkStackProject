@@ -97,10 +97,20 @@ SSH into the control node and follow the steps below:
 - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+
+### Finishing up
+
+Make sure to update the hosts file to include the elk machine, you can fit it below the webservers (seen above)
 - [elk]
 - 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
-### Finishing up
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+Both of the playbooks can be located below 
+- filebeat-configuration.yml https://github.com/Aakris/13ElkStackProject/blob/main/Ansible/filebeat-configuration.yml
+- filebeat-playbook.yml https://github.com/Aakris/13ElkStackProject/blob/main/Ansible/filebeat-playbook.yml
+- metricbeat-configuration.yml https://github.com/Aakris/13ElkStackProject/blob/main/Ansible/metricbeat-configuration.yml
+- metricbeat-playbook.yml https://github.com/Aakris/13ElkStackProject/blob/main/Ansible/metricbeat-playbook.yml
+-run - "ansible-playbook filebeat-playbook.yml" in the folder where ansible is
+-run - "ansible-playbook metricbeat-playbook.yml" 
+After that it should install them and leave .deb files in their place where they have been installed!
+
 - Finally go to http://10.1.0.4:5601 to check if your kibana is running correctly
