@@ -97,6 +97,8 @@ SSH into the control node and follow the steps below:
 - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+- [elk]
+- 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
