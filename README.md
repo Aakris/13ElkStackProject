@@ -68,14 +68,16 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![image](https://user-images.githubusercontent.com/73618945/118352654-c5147d00-b51f-11eb-8558-33e5617ebcb9.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web1
+- Web2
+- Web3
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Metricbeat and Filebeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
