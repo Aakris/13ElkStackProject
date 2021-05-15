@@ -30,8 +30,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat takes metrics and statistics from the operating system of the services on the server. Then just like FIlebeat you can send it to Elasticsearch or Logstash
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-
+_______________________________________________________
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
@@ -58,14 +57,14 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
+- Automating this process is worthwile in case you ever want to set it up again. You do not have to spend the time and resources to create it again when the playbook is right there ready to be used. There is only room for human error in the initial setup of the playbook which is another plus
 
 The playbook implements the following tasks:
 - Installs docker.io
 - Installs pip3
 - Increases memory
-- Downlaods and launches Docker Container
+- Downloads and launches Docker Container
 - Enables Docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -90,9 +89,14 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the Elk-Server-Deployment.yml file to /etc/ansible/ directory
+- Update the hosts file to include the ip addresses of the elk machine(s)
+- Run the playbook, and navigate to webservers to check that the installation worked as expected.
+It should look similarly to this
+[webservers]
+10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
