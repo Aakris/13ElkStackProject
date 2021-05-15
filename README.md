@@ -114,3 +114,5 @@ Both of the playbooks can be located below
 After that it should install them and leave .deb files in their place where they have been installed!
 
 - Finally go to http://10.1.0.4:5601 to check if your kibana is running correctly
+![image](https://user-images.githubusercontent.com/73618945/118375865-be1e5680-b581-11eb-9178-4ccb3df10617.png)
+
