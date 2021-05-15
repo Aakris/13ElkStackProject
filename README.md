@@ -113,6 +113,6 @@ Both of the playbooks can be located below
 -run - "ansible-playbook metricbeat-playbook.yml" 
 After that it should install them and leave .deb files in their place where they have been installed!
 
-- Finally go to http://65.52.13.158:5601 to check if your kibana is running correctly
+- Finally go to http://65.52.13.158:5601 (or whatever ip yours is) to check if your kibana is running correctly
 ![image](https://user-images.githubusercontent.com/73618945/118375865-be1e5680-b581-11eb-9178-4ccb3df10617.png)
 
