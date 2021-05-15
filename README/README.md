@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 https://github.com/Aakris/13ElkStackProject/blob/main/Elk.Draw.io.JPG
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the beat files may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -37,7 +37,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | WEB1     | Server   | 10.0.0.5   | Linux            |
 | WEB2     | Server   | 10.0.0.6   | Linux            |
 | WEB3     | Server   | 10.0.0.7   | Linux            |
-| ELK      | Server   | 10.1.0.4   | Linux            |
+| ELK      | Logs     | 10.1.0.4   | Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
