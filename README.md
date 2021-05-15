@@ -21,12 +21,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting _____ to the network.
-- Load balancers are important because they increase the amount of space for concurrent users and makes the application more reliable. If one were to fail it would shift the traffic onto another server instead of going down completely.
- What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly available, in addition to restricting DDOS attacks to the network.
+- Load balancers are important because they increase the amount of space for concurrent users and makes the application more reliable. If one were to fail or be attacked it would shift the traffic onto another server instead of going down completely.
+- Jump box is important for this setup because it acts as a place for admins to connect to first before doing anything administrative or anything important. It also acts as a barrier if there was a situation where we needed to connect to other servers.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+- Filebeat is used to monitor and collect whatever data you want and send it to either Elasticsearch or Logstash, whichever you prefer. 
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
