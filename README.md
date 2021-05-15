@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/Aakris/13ElkStackProject/blob/main/Elk.Draw.io.JPG
+![image](https://user-images.githubusercontent.com/73618945/118374166-e0ab7200-b577-11eb-9d56-d4cb4bbfe404.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the beat files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -93,10 +93,10 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the ip addresses of the elk machine(s)
 - Run the playbook, and navigate to webservers to check that the installation worked as expected.
 -It should look similarly to this
-[webservers]
-10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+-[webservers]
+-10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+-10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+-10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
